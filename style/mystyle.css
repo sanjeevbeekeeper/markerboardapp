@@ -1,0 +1,1786 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------CSS Reset from Meyerweb-----*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------CSS Reset End-----*/
+
+
+
+
+
+/*----------------------------------Webpage Background-----*/
+
+body {background-image:url('../images/jpg/bg.jpg');}
+
+/*----------------------------------Custom Font-----*/
+
+@font-face {
+	font-family: Rage; 
+	src: url('../fonts/RAGE.ttf');}
+	
+/*-----for IE-----*/	
+@font-face {
+	font-family: Rage_IE; 
+	src: url('../fonts/RAGE.eot');}
+
+/*-----------------------------------------------------------------------Header---*/
+
+/*-----Outline-----*/
+#header, #wrapper_menu, img.logo_img, span.name_menu  {
+	outline:0px solid gold;}
+
+/*----------------------------------Head Background-----*/
+
+#header {background-image:url('../images/png/topbg.png');
+	background-repeat:repeat-x;
+	height:5.375em; /*-----86 pixel-----*/
+	}
+/*----------------------------------Head Wrapper-----*/
+
+#wrapper_menu {
+	width:50.313em;/*-----805 pixel-----*/
+	height:5.313em; /*-----85 pixel-----*/
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+/*----------------------------------Beekeeper Logo-----*/
+
+img.logo_img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0.125em; /*-----2 pixel-----*/
+	padding-top:0.875em; /*-----14 pixel-----*/
+	} 
+
+/*----------------------------------Sanjeev Beekeeper-----*/
+
+span.name_menu {
+	color:#999999; 
+	font-family: Verdana, Helvetica, Geneva, sans-serif;
+	font-size:0.938em; /*---15 pixels---*/
+	display:block;
+	text-align:center;
+	padding-top:0.375em; /*-----6 pixel-----*/
+	}
+
+
+
+
+
+/*-----------------------------------------------------------------------Navigation on Top---*/
+
+/*-----Outline-----*/
+div#nav_container, div.menu, div a.home, a.markerboard, a.support, a.about  {
+	outline:0px solid Darkgrey;
+	}
+
+/*----------------------------------Container-----*/
+
+div#nav_container {
+	overflow:hidden;
+	width:805px;
+	height:auto;
+	margin-top:20px;
+	margin-bottom:35px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+
+/*----------------------------------Menu-----*/
+
+div.menu {
+	margin-left:auto;
+	margin-right:auto;
+	width:445px;
+	}
+	
+
+
+/*----------------------------------Container-----*//*-----Navigation at the bottom-----*/
+
+/*-----Outline-----*/
+div#nav_cont_bottom, div.menu_bottom {
+	outline:0px solid white;
+	}
+
+div#nav_cont_bottom {
+	overflow:hidden;
+	border:0px;
+	width:805px;
+	height:auto;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+
+/*----------------------------------Menu-----*//*-----Navigation at the bottom-----*/
+
+div.menu_bottom {
+	float:left;
+	border:0px;
+	margin-top:7px;
+	margin-left:30px;
+	width:445px;
+	}	
+
+/*----------------------------------List as Inline-----*/
+
+div a.home, a.markerboard, a.support, a.about {
+	float:left;
+	text-decoration:none;
+	color:#999999;
+	font-family: Verdana, Helvetica, Geneva, sans-serif;
+	padding:5px 15px 5px 15px;
+	font-size:17px;
+	}
+
+/*----------------------------------Mouseover-----*/
+
+div a:hover {
+	color:white;
+	}
+
+/*----------------------------------Selected Menu-----*/
+
+span.selected {
+	color:#99cc33;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------Home Page---*/
+
+/*-----------------------------------------------------------------------Wrapper---*/
+
+
+/*-----Outline-----*/
+div#wrapper_body, div.home_mb_icon, img.mb_icon_img, img.free, div.home_mb_cont, img.mb_title, span.for_text, span.text_iphone, span.version { 
+	outline:0px solid deeppink;
+	}
+
+div#wrapper_body {
+	width:50.313em; /*---805 pixels---*/
+	height:385px;
+	margin-top:2px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+
+/*----------------------------------Markerboard Icon Container-----*/
+
+div.home_mb_icon {
+	width:325px;
+	position:relative;
+	height:380px;
+	float:left;
+	border:0px;
+	}
+
+/*----------------------------------Markerboard Icon-----*/
+
+img.mb_icon_img {
+	position:absolute;
+	width:221px;
+	height:310px;
+	margin:65px 0px 0px 93px;
+	}
+
+/*----------------------------------Free Icon-----*/
+
+img.free {
+	position:absolute;
+	width:75px;
+	height:75px;
+	margin:38px 0px 0px 75px;
+	}
+
+/*----------------------------------Text Container-----*/
+
+div.home_mb_cont {
+	width:450px;
+	height:200px;
+	float:right;
+	position:relative;
+	}
+
+/*----------------------------------Markerboard text image-----*/
+
+img.mb_title {
+	margin-top:127px;
+	padding-left:0px;
+	border:0;
+	}
+
+/*----------------------------------"for"-----*/
+
+span.for_text {
+	color:#666666;
+	margin-left:5px;
+	font-family:Rage, Rage_IE; /*-----Custom Font, 'RAGE_IE' is for IE -----*/
+	font-size:35px;
+	letter-spacing:-2px;
+	}
+
+/*----------------------------------"iPhone and iPod Touch"-----*/
+
+span.text_iphone {
+	font-family: Helvetica,"Trebuchet MS", sans-serif;
+	font-weight:bold;
+	font-size:35px;
+	letter-spacing:-2px;
+	margin-left:-2px;
+	}
+
+/*----------------------------------"Version Number"-----*/
+
+span.version {
+	color:grey;
+	width:410px;
+	float:right;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:15px;
+	letter-spacing:-1px;
+	}
+	
+/*----------------------------------"Best viewerd in Firefox"-----*/
+
+/*-----Outline-----*/
+div#bestview_cont, span.bestview {
+	outline:0px solid white;
+	}
+
+div#bestview_cont {
+	text-align:right;
+	margin-left:auto;
+	margin-right:auto;
+	width: 805px;
+	}
+
+span.bestview {
+	color:grey;
+	margin-top:20px;
+	font-size:10px;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+/*-----------------------------------------------------------------------Wrapper Ends---*/
+
+
+
+
+
+/*-----------------------------------------------------------------------Footer---*/
+
+/*-----Outline-----*/
+div#home_footer_cont, .copyright, .design {
+	outline:0px solid white;
+	}
+
+div#home_footer_cont {
+	overflow:hidden;
+	width:805px;
+	margin-bottom:30px;
+	margin-top:30px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+/*----------------------------------2012 Sanjeev Beekeeper-----*/
+
+p.copyright {
+	color: #666666;
+	font-family: Verdana, Helvetica, Geneva, sans-serif;
+	font-size: 13px;
+	word-spacing: 0px;
+	margin-bottom: 2px;
+	}
+
+/*----------------------------------Designed by Beekeeper-----*/
+
+p.design {
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:13px;
+	word-spacing:-2px;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------Footer Ends---*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------Markerboard---*/
+
+/*-----------------------------------------------------------------------Wrapper---*/
+
+#wrapper_container {
+height:86px;
+width:50.313em; /*---805 pixels---*/
+height:auto;
+margin-top:5px;
+margin-bottom:5px;
+margin-left:auto;
+margin-right:auto;}
+
+
+/*-----------------------------------------------------------------------Wrapper Middle---*/
+div#markerboard_wrapper_middle {
+background-image:url('../images/jpg/wrapmid.jpg');
+background-repeat:repeat-y;
+height:3200px;
+width:805px;}
+
+/*-----------------------------------------------------------------------Top Section (Markerboard, iPhone and iPod touch text)---*/
+
+/*----------------------------------Markerboard Logo and Appstore Container-----*/
+
+div#markerboard_app_cont {
+width:250px;
+height:auto;
+float:left;}
+
+/*----------------------------------Markerboard Logo-----*/
+
+img.mkblogo {
+float:right;
+padding-top:15px;
+padding-right:12px;}
+
+/*----------------------------------Appstore Top-----*/
+
+img.appsttop {
+float:right;}
+
+/*----------------------------------Markerboard Text Container-----*/
+
+div#markerboard_text_cont {
+overflow:hidden;
+width:500px;
+padding-right:40px;
+height:auto;
+float:right;}
+
+img.mkbtext {
+overflow:hidden;
+padding-top:47px;
+float:left;}
+
+/*----------------------------------Sketch Your Ideas Quickly-----*/
+
+div#sketchideas_text_cont {
+height:auto;
+width:490px;
+float:right;
+text-align:left;
+padding-right:50px;
+color:#808080;
+font-family:Helvetica, Verdana, Geneva, sans-serif;
+font-size:39px;
+font-weight:bold;
+text-transform:capitalize;
+letter-spacing:-2px;}
+
+/*----------------------------------iPhone and iPod Touch Text-----*/
+
+div#devicesios_text_cont {
+text-align:right;
+color:#808080;
+width:450px;
+float:right;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-size:15px;
+padding-right:90px;
+line-height:17px;
+margin-top:37px;}
+
+/*----------------------------------Separator 1-----*/
+
+img.separator1 {
+margin-left:36px;
+margin-top:30px;
+width:733px;}
+
+/*-----------------------------------------------------------------------jQuery Slideshow---*/
+
+/*----------------------------------jQuery Script Placement (script on the html page)-----*/
+div.slideshow {
+margin-top:40px;
+margin-bottom:30px;}
+
+/*----------------------------------Separator 2-----*/
+
+img.separator2 {
+margin-left:36px;
+margin-top:0px;
+width:733px;}
+
+/*-----------------------------------------------------------------------Markerpen and bg---*/
+
+div#markerpenbg, div#eraserbg, img.markerpen, div#marker_desc {
+outline:0px solid white;}
+
+/*----------------------------------Markerpen BG-----*/
+
+div#markerpenbg, div#eraserbg {
+background-image:url('images/png/markerpenbg.png');
+background-repeat:no-repeat;
+display:block;
+margin-left:auto;
+margin-right:auto;
+height:175px;}
+
+/*----------------------------------Markerpen-----*/
+
+img.markerpen {
+margin:50px 0px 0px 146px;}
+
+/*----------------------------------Markerpen Description-----*/
+
+div#marker_desc {
+margin-top:30px;
+padding:0 35px 0 35px;
+color:white;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-size:14px;
+text-align:left;
+line-height:20px;}
+
+/*-----------------------------------------------------------------------Rollpen Tappen Image and Text---*/
+
+div#rolltap_img_cont, img.rolltap_img, div#rolltap_text_cont, h3.rollpen, 
+span.rollpen_desc, h3.tappen, span.tappen_desc {
+outline:0px solid white;}
+
+
+/*----------------------------------Roll pen - Tap pen Image Container-----*/
+
+div#rolltap_img_cont {
+margin-top:60px;
+padding-left:30px;
+overflow:hidden;
+width:auto;
+height:auto;}
+
+/*----------------------------------Roll pen - Tap pen Text Container-----*/
+
+div#rolltap_text_cont {
+float:right;
+width:375px;
+height:auto;}
+
+/*----------------------------------Roll pen Text-----*/
+
+h3.rollpen {
+padding-top:8px;
+margin:0px;
+color:#4987df;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+height:auto;
+float:right;
+width:375px;}
+
+/*----------------------------------Roll pen Description-----*/
+
+span.rollpen_desc {
+color:white;
+padding:10px 30px 0 20px;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+line-height:20px;
+font-size:14px;
+height:auto;
+overflow:hidden;
+float:left;}
+
+/*----------------------------------Tap pen Text-----*/
+
+h3.tappen {
+color:#4987df;
+margin:25px 0 0 0 ;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+height:auto;
+float:right;
+width:375px;}
+
+/*----------------------------------Tap pen Description-----*/
+
+span.tappen_desc {
+color:white;
+padding:10px 30px 0 20px;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+line-height:20px;
+font-weight:medium;
+font-size:14px;
+height:auto;
+overflow:hidden;
+float:right;}
+
+/*----------------------------------Separator 3-----*/
+
+img.separator3 {
+margin:40px 0px 40px 36px;
+width:733px;}
+
+/*-----------------------------------------------------------------------Adjusting the Marker size Image and Text---*/
+
+div#markersize_img_cont, img.markersize_img, div#markersize_text_cont, h3.markersize, span.markersize_desc {
+outline:0px solid white;}
+
+/*----------------------------------Markersize Image Container-----*/
+
+div#markersize_img_cont {
+width:420px
+hight:auto;}
+
+/*----------------------------------Markersize Image-----*/
+
+img.markersize_img {
+float:right;
+margin-right:45px;}
+
+/*----------------------------------Markersize Text-----*/
+
+div#markersize_text_cont {
+float:left;
+width:420px;}
+
+/*----------------------------------Markersize-----*/
+
+h3.markersize {
+margin:60px 0px 0px 50px;
+color:#4987df;
+font-weight:medium;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+height:auto;}
+
+/*----------------------------------Markersize Description-----*/
+
+span.markersize_desc {
+margin:0px;
+float:left;
+padding:20px 0px 0px 70px;
+color:white;
+line-height:20px;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+font-size:14px;
+height:auto;}
+
+/*----------------------------------Separator 4-----*/
+
+img.separator4 {
+margin:40px 0px 40px 36px;
+width:733px;}
+
+/*-----------------------------------------------------------------------Offset cursor Image---*/
+
+div#offsetcursor_img_cont, img.offsetcursor_img, div#offsetcursor_text_cont, h3.offsetcursor, span.offsetcursor_desc {
+outline:0px solid white;}
+
+/*----------------------------------Offset Cursor Image Container-----*/
+
+div#offsetcursor_img_cont {
+height:100px;
+padding-left:85px;
+}
+
+/*----------------------------------Offset Cursor Image-----*/
+
+img.offsetcursor_img {
+width:204px;
+height:86px;
+margin-top:4px;}
+
+/*----------------------------------Offset Cursor Text Container-----*/
+
+div#offsetcursor_text_cont {
+float:right;
+width:511px;
+padding-left:0px;}
+
+/*----------------------------------Offset Cursor Text-----*/
+
+h3.offsetcursor {
+margin:0px;
+padding-left:40px;
+color:#4987df;
+font-weight:medium;
+font-family:Verdana, Helvetica, Geneva, sans-serif;}
+
+/*----------------------------------Offset Cursor Description-----*/
+
+span.offsetcursor_desc {
+margin:0px;
+float:right;
+padding:20px 70px 0px 60px ;
+color:white;
+line-height:20px;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+font-size:14px;}
+
+/*----------------------------------Separator 5-----*/
+
+img.separator5 {
+margin:40px 0px 40px 36px;
+width:733px;}
+
+/*-----------------------------------------------------------------------History Brushs---*/
+
+div#historybrush_img_cont, img.historybrush_img,div#historybrush_text_cont, h3.historybrush, span.historybrush_desc {
+outline:0px solid white;}
+
+
+div#historybrush_img_cont {
+height:195px;
+}
+
+/*----------------------------------Historybrush Image-----*/
+
+img.historybrush_img {
+float:right;
+height:195px;
+width:200px;
+border:0px;
+margin-right:80px;
+}
+
+/*----------------------------------History Text Container-----*/
+
+div#historybrush_text_cont {
+float:left;
+width:518px;
+height:195px;}
+
+/*----------------------------------History Brush Text-----*/
+
+h3.historybrush {
+margin-top:61px;
+padding-left:50px;
+color:#4987df;
+font-weight:medium;
+font-family:Verdana, Helvetica, Geneva, sans-serif;}
+
+/*----------------------------------History Brush Description-----*/
+
+span.historybrush_desc {
+margin:0px;
+float:right;
+padding:20px 40px 0 70px;
+color:white;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+line-height:20px;
+font-weight:medium;
+font-size:14px;}
+
+/*----------------------------------Separator 6-----*/
+
+img.separator6 {
+margin:40px 0px 0px 36px;
+width:733px;}
+
+/*-----------------------------------------------------------------------Eraser BG, Eraser---*/
+
+img.eraser, div#eraser_desc {
+outline:0px solid white;}
+
+/*----------------------------------Eraser BG-----*/
+
+/*-----
+NOTE: 
+For Eraser BG see the markerpen bg both are same
+-----*/
+
+/*----------------------------------Eraser Image-----*/
+
+img.eraser {
+margin:57px 0px 0px 146px;}
+
+/*----------------------------------Eraser Description-----*/
+
+div#eraser_desc {
+margin-top:60px;
+padding:0 35px 0 35px;
+color:white;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-size:14px;
+text-align:left;
+line-height:20px;}
+
+/*-----------------------------------------------------------------------Eraser Thickness---*/
+
+div#eraserthick_img_cont, img.eraserthick_img, div#eraserthick_text_cont, h3.eraserthick, span.eraserthick_desc {
+outline:0px solid white;}
+
+
+/*----------------------------------Eraser Thickness Image Container-----*/
+
+div#eraserthick_img_cont {
+margin-top:60px;
+padding-left:30px;
+overflow:hidden;
+width:auto;
+height:auto;}
+
+/*----------------------------------Eraser Thickness Text Container-----*/
+
+div#eraserthick_text_cont {
+float:right;
+width:375px;
+height:auto;}
+
+/*----------------------------------Eraser Thickness-----*/
+
+h3.eraserthick {
+padding-top:8px;
+margin-top:45px;
+color:#4987df;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+height:auto;
+float:right;
+width:375px;}
+
+/*----------------------------------Eraser Thickness Description-----*/
+
+span.eraserthick_desc {
+color:white;
+padding:10px 30px 0 20px;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+line-height:20px;
+font-size:14px;
+height:auto;
+overflow:hidden;
+float:left;}
+
+/*----------------------------------Separator 7-----*/
+
+img.separator7 {
+margin:40px 0px 40px 36px;
+width:733px;}
+
+/*-----------------------------------------------------------------------Toggle Switch---*/
+
+div#toggleswitch_img_cont, img.toggleswitch_img, div#toggleswitch_text_cont, h3.toggleswitch, span.toggleswitch_desc {
+outline:0px solid white;}
+
+/*----------------------------------Toggle Switch Image-----*/
+
+img.toggleswitch_img {
+float:right;
+margin:13px 91px 0px 0px;}
+
+/*----------------------------------Toggle Switch Text Container-----*/
+
+div#toggleswitch_text_cont {
+float:left;
+width:507px;
+height:auto;}
+
+/*----------------------------------Toggle Switch Text-----*/
+
+h3.toggleswitch {
+margin:0px 0px 0px 0px;
+padding-left:50px;
+color:#4987df;
+font-weight:medium;
+font-family:Verdana, Helvetica, Geneva, sans-serif;}
+
+/*----------------------------------Toggle Switch - Description-----*/
+
+span.toggleswitch_desc {
+margin:0px;
+float:right;
+padding:20px 40px 0 70px;
+color:white;
+line-height:20px;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-weight:medium;
+font-size:14px;}
+
+/*----------------------------------Separator 8-----*/
+
+img.separator8 {
+margin:40px 0px 40px 36px;
+width:733px;}
+
+/*-----------------------------------------------------------------------Get Your Copy Today!!---*/
+
+p.getyourcopy {
+margin:0px;
+color:#808080;
+font-family:Verdana, Helvetica, Geneva, sans-serif;
+font-size:19px;
+letter-spacing:-1px;
+text-align:center;
+outline:0px solid white;
+}
+/*-----------------------------------------------------------------------AppStore at the bottom---*/
+
+a.appstore_bottom {
+margin-left:auto;
+margin-right:auto;
+display:block;
+width:176px;
+margin-top:15px;
+outline:0px solid white;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------Markerboard Ends---*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------Support---*/
+
+/*---------------------------------------------------------------------Support--Wrapper---*/
+
+
+/*----------------------------------Wrapper Container-----*/
+
+#wrapper_container {
+	height:86px;
+	width:805px; /*---805 pixels---*/
+	height:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+/*----------------------------------Wrapper Head-----*/
+
+/*-----Reused from About Page-----*/
+
+/*----------------------------------Wrapper Middle-----*/
+
+div#support_wrapper_middle {
+	background-image:url('../images/jpg/wrapmid.jpg');
+	background-repeat:repeat-y;
+	height:2420px;
+	width:805px;
+	}
+
+/*----------------------------------Support Markerboard Icon-----*/
+
+/*-----Outline-----*/
+div#support_title_cont, div.supporticon, img.supporticon_img {
+	outline:0px solid white;}
+
+
+div.supporticon {
+	float:left;
+	width:222px;
+	height:auto;
+	overflow:hidden;
+	}
+
+img.supporticon_img {
+	border:0px;
+	width:129px;
+	height:134px;
+	margin-top:28px;
+	margin-left:93px;
+	}
+
+/*----------------------------------Support Markerboard Text Image-----*/
+
+/*-----Outline-----*/
+div#support_mkb_text, img.support_mkb_img, span.supporttext {
+	outline:0px solid white;}
+
+
+div#support_mkb_text {
+	width:555px;
+	float:right;
+	height:auto;
+	overflow:hidden;
+	}
+
+img.support_mkb_img {
+	margin-top:49px;
+	width:450px;
+	}
+
+span.supporttext {
+	margin-right:111px;
+	color:#808080;
+	float:right;
+	font-family:Helvetica, Verdana, Geneva, sans-serif;
+	font-size:39px;
+	font-weight:bold;
+	text-transform:capitalize;
+	letter-spacing:-1px;
+	}
+
+/*----------------------------------Separator 1-----*/
+
+img.separator {
+	margin-left:36px;
+	margin-top:30px;
+	width:733px;
+	}
+
+/*----------------------------------Support Description-----*/
+
+/*-----Outline-----*/
+div#support_desc {
+	outline:0px solid white;}
+
+div#support_desc {
+	margin-top:40px;
+	padding:0 52px 0 52px;
+	color:white;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	text-align:left;
+	line-height:20px;
+	}
+
+/*----------------------------------FAQ-----*/
+
+/*-----Outline-----*/
+div#faq, span.faqtext {
+	outline:0px solid white;}
+
+div#faq {
+	padding-left:60px;
+	margin-top:40px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+span.faqtext {
+	marin-top:40px;
+	color:#4c4c4c;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:50px;
+	letter-spacing:-5px;
+	font-weight:900;
+	}
+
+/*-----------------------------------------------------------------------Title 2 "Marker and Eraser"---*/
+
+
+/*-----Outline-----*/
+div#markerboard_eraser, h3.mkb_eraser_title {
+	outline:0px solid white;
+	}
+
+div#markerboard_eraser {
+	padding-left:40px;
+	margin-top:30px;
+	height:10px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+h3.mkb_eraser_title {
+	color:#4987df;
+	margin:0px;
+	float:left;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-weight:medium;
+	font-weight:bold;
+	}
+
+/*----------------------------------"Question and Answer 1"-----*/
+
+
+/*-----Outline-----*/
+div#question1, div#question2, div#question3, div#question4, div#question5, div#question6, div#question7, div#question8 { 
+	outline:0px solid grey;}
+
+/*-----Outline-----*/
+div#answer1, div#answer2, div#answer3, div#answer4, div#answer5, div#answer6, div#answer7, div#answer8 {
+	outline:0px solid darkgrey;}
+
+div#question1 {
+	padding:0px 50px 0px 50px;
+	margin-top:40px;
+	text-align:justify;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer1 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	line-height:18px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 2"-----*/
+
+div#question2 {
+	padding-left:50px;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer2 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	line-height:18px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 3"-----*/
+
+div#question3 {
+	padding-left:50px;
+	text-align:justify;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer3 {
+	padding:0px 50px 0px 70px;
+	text-align:justify;
+	line-height:18px;
+	margin-top:10px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 4"-----*/
+
+div#question4 {
+	padding-left:50px;
+	text-align:justify;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer4 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	line-height:18px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 5"-----*/
+
+div#question5 {
+	padding-left:50px;
+	margin-top:20px;
+	text-align:justify;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer5 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	line-height:18px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 6"-----*/
+
+div#question6 {
+	padding-left:50px;
+	margin-top:20px;
+	text-align:justify;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer6 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	line-height:18px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 7"-----*/
+
+div#question7 {
+	padding-left:50px;
+	margin-top:20px;
+	text-align:justify;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer7 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	line-height:18px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 8"-----*/
+
+div#question8 {
+	padding-left:50px;
+	margin-top:20px;
+	text-align:justify;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer8 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*-----------------------------------------------------------------------Title 2 "Options"---*/
+
+
+/*-----Outline-----*/
+div#markerboard_eraser, h3.option_title {
+	outline:0px solid white;
+	}
+
+div#options {
+	padding-left:40px;
+	margin-top:40px;
+	height:10px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+h3.options_title {
+	color:#4987df;
+	margin:0px;
+	float:left;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-weight:medium;
+	font-weight:bold;
+	}
+
+/*----------------------------------"Question and Answer 1"-----*/
+
+
+/*-----Outline-----*/
+div#question9, div#question10, div#question11, div#question12 { 
+	outline:0px solid grey;}
+
+/*-----Outline-----*/
+div#answer9, div#answer10, div#answer11, div#answer12 {
+	outline:0px solid darkgrey;
+	}
+
+
+div#question9 {
+	padding:0px 50px 0px 50px;
+	margin-top:40px;
+	text-align:justify;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer9 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	line-height:18px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 2"-----*/
+
+div#question10 {
+	padding-left:50px;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer10 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 3"-----*/
+
+div#question11 {
+	padding-left:50px;
+	text-align:justify;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer11 {
+	padding:0px 50px 0px 70px;
+	text-align:justify;
+	line-height:18px;
+	margin-top:10px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 4"-----*/
+
+div#question12 {
+	padding-left:50px;
+	text-align:justify;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer12 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*-----------------------------------------------------------------------Title 3 "General"---*/
+
+
+/*-----Outline-----*/
+div#markerboard_eraser, h3.general_title {
+	outline:0px solid white;
+	}
+	
+div#general {
+	padding-left:40px;
+	margin-top:40px;
+	height:10px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+h3.general_title {
+	color:#4987df;
+	margin:0px;
+	float:left;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-weight:medium;
+	font-weight:bold;
+	}
+
+/*----------------------------------"Question and Answer 1"-----*/
+
+
+/*-----Outline-----*/
+div#question9, div#question10, div#question11, div#question12 { 
+	outline:0px solid grey;
+	}
+
+/*-----Outline-----*/
+div#answer9, div#answer10, div#answer11, div#answer12 {
+	outline:0px solid darkgrey;
+	}
+
+
+div#question13 {
+	padding:0px 50px 0px 50px;
+	margin-top:40px;
+	text-align:justify;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer13 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	line-height:18px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 2"-----*/
+
+div#question14 {
+	padding-left:50px;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer14 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 3"-----*/
+
+div#question15 {
+	padding-left:50px;
+	text-align:justify;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer15 {
+	padding:0px 50px 0px 70px;
+	text-align:justify;
+	margin-top:10px;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------"Question and Answer 4"-----*/
+
+div#question16 {
+	padding-left:50px;
+	text-align:justify;
+	margin-top:20px;
+	color:#cccccc;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+div#answer16 {
+	padding:0px 50px 0px 70px;
+	margin-top:10px;
+	text-align:justify;
+	color:#808080;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	}
+
+/*----------------------------------Separator-----*/
+
+/*-----Reuse the first one-----*/
+
+/*-----------------------------------------------------------------------Contact Us---*/
+
+
+/*-----Outline-----*/
+div#contactus, h2.contactus_title {
+	outline:0px solid white;
+	}
+
+div#contactus {
+	padding-left:40px;
+	margin-top:50px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+h2.contactus_title {
+	color:#4c4c4c;
+	margin:0px;
+	float:left;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:40px;
+	letter-spacing:-3px;
+	font-weight:900;
+	}
+
+/*----------------------------------"Contact Us" Description-----*/
+
+div#contactus_desc {
+	outline:0px solid white;
+	}
+
+div#contactus_desc {
+	margin-top:20px;
+	margin-bottom:0px;
+	padding:0 52px 0 52px;
+	color:white;
+	font-family:Verdana, Helvetica, Geneva, sans-serif;
+	font-size:14px;
+	text-align:left;
+	line-height:20px;
+	}
+
+/*----------------------------------"Mail Id" text-----*/
+
+/*-----Outline-----*/
+div#mailid, h4.mailid_text, div.mailid_parent, img.doodle {
+	outline:0px solid white;
+	}
+
+div.mailid_parent {
+	position:relative;
+	width:585px;
+	height:300px;
+	}
+
+div#mailid {
+	width:585px;
+	position:absolute;
+	margin-top:184px;
+	}
+
+h4.mailid_text {
+	color:Lightgrey;
+	margin-left:95px;
+	text-align:center;
+	font-family:Helvetica, Verdana, Geneva, sans-serif;
+	border:0px;
+	width:400px;
+	font-size:17px;
+	font-weight:200;
+	padding:20px 0px 20px 0px;
+	background-color:#333333;
+	box-shadow: inset 0px 0px 3px black;
+	border-radius:30px;
+	}
+
+div a {text-decoration:none;}
+
+h4.mailid_text:hover {
+	box-shadow: inset 0px 0px 3px #4987df;
+	background-color:#4987df;
+	border:0px;
+	color:white;
+	}
+
+/*----------------------------------doodle image-----*/
+
+img.doodle {
+	position:absolute;
+	width:513px;
+	height:143px;
+	border:0px;
+	margin-top:142px;
+	margin-left:40px;
+	}
+
+/*----------------------------------Watermark Image-----*/
+
+div#watermark {
+	width:216px;
+	height:388px;
+	border:0px;
+	padding-right:2px;
+	margin-top:50px;
+	float:right;
+	}
+
+/*-----------------------------------------------------------------------Wrapper Bottom---*/
+
+/*-----Reused from About Page-----*/
+
+/*-----------------------------------------------------------------------Social Network Icons---*/
+
+
+/*-----Outline-----*/
+div.fac_twt_cont, img.facebook, img.twitter {
+	outline:0px solid white;
+	}
+
+img.facebook {
+	height:42px;
+	width:42px;
+	border:0px;
+	margin-right:30px;
+	margin-left:0px;
+	float:right;
+	background-color:Dimgrey;
+	border-radius:60px;
+	}
+
+img.twitter {
+	width:42px;
+	height:42px;
+	border:0px;
+	margin-right:15px;
+	margin-left:0px;
+	float:right;
+	background-color:Dimgrey;
+	border-radius:60px;
+	}
+	
+img.twitter:hover {
+	background-color:#33ccff;
+	}
+
+img.facebook:hover {
+	background-color:#336699;
+	}
+
+/*----------------------------------------------------------------------------------------------------------------Support Ends---*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------About---*/
+
+/*-----------------------------------------------------------------------Wrapper---*/
+
+/*-----Outline-----*/
+#wrapper_container, div#wrapper_head {
+outline:0px solid violet;}
+
+/*----------------------------------Wrapper Container-----*/
+
+#wrapper_container {
+	height:86px;
+	width:805px;
+	height:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+/*-----------------------------------------------------------------------Wrapper Head---*/
+
+div#wrapper_head {
+	background-image:url('../images/jpg/wraptop.jpg');
+	background-repeat:no-repeat;
+	height:32px;
+	width:805px;
+	}
+
+/*-----------------------------------------------------------------------Wrapper Middle---*/
+
+/*-----Outline-----*/
+div#wrapper_middle, div.middle_left, span.abt_about, div.comingsoon_cont, span.comingsoon_text, 
+div.socialnetwork_cont, div.blogger, div.facebook, div.behance, div.twitter {
+outline:0px solid deeppink;}
+
+
+div#wrapper_middle {
+	background-image:url('../images/jpg/wrapmid.jpg');
+	background-repeat:repeat-y;
+	height:400px;
+	width:805px;
+	}
+
+/*----------------------------------About Container-----*/
+
+div.middle_left {
+	width:180px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+
+	}
+
+/*----------------------------------About Text-----*/
+
+span.abt_about {
+	color:#4d4d4d;
+	font-family: Helvetica, Verdana, Geneva, sans-serif;
+	margin-left:60px;
+	font-weight:bold;
+	letter-spacing:-2px;
+	font-size:45px;
+	}
+
+/*----------------------------------Coming Soon-----*/
+
+div.comingsoon_cont {
+	width:805px;
+	padding:165px 0px 5px 0px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+span.comingsoon_text {
+	color:#676767;
+	font-size:25px;
+	font-family: Verdana, Helvetica, Geneva, sans-serif;
+	}
+
+/*----------------------------------Social Network Icons-----*/
+
+/*-----Outline-----*/
+div#socialnetwork_cont, div.blogger, div.behance, div.facebook, div.twitter {
+	outline:0px solid white;
+	}
+
+div#socialnetwork_cont {
+	padding-right:316px;
+	}
+
+div.blogger {
+	float:right;
+	width:25px;
+	height:25px;
+	border:0px;
+	margin-right:auto;
+	margin-left:auto;
+	}
+
+div.behance {
+	float:right;
+	width:25px;
+	height:25px;
+	border:0px;
+	margin-right:auto;
+	margin-left:auto;
+	}
+
+div.facebook {
+	float:right;
+	width:25px;
+	height:25px;
+	border:0px;
+	margin-right:auto;
+	margin-left:auto;
+	}
+	
+div.twitter {
+	float:right;
+	width:25px;
+	height:25px;
+	border:0px;
+	margin-right:auto;
+	margin-left:auto;
+	}
+	
+div.blogger {background-image:url("../images/jpg/socialblog.jpg"); 
+	background-repeat:no-repeat;
+	}
+
+div.behance {background-image:url("../images/jpg/socialbehance.jpg");
+	background-repeat:no-repeat;
+	}
+
+div.facebook {background-image:url("../images/jpg/socialfacebook.jpg");
+	background-repeat:no-repeat;
+	}
+
+div.twitter {background-image:url("../images/jpg/socialtwitter.jpg");
+	background-repeat:no-repeat;
+	}
+ 
+div.blogger:hover .imgswap {
+	visibility:hidden;}
+
+div.behance:hover .imgswap {
+	visibility:hidden;}
+	
+div.facebook:hover .imgswap {
+	visibility:hidden;}
+
+div.twitter:hover .imgswap {
+	visibility:hidden;}
+
+a {outline:0;}
+
+
+/*-----------------------------------------------------------------------Wrapper Bottom---*/
+
+/*-----Outline-----*/
+div#wrapper_bottom {
+outline:0px solid cyan;}
+
+
+div#wrapper_bottom {
+	background-image:url('../images/jpg/wrapbottom.jpg');
+	background-repeat:no-repeat;
+	height:32px; 
+	width:805px;
+	}
+/*-----------------------------------------------------------------------Wrapper Ends---*/
+
+
+

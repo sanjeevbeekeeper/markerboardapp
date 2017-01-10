@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- DOCTYPE, used to identity that this is a proper HTML page. It is an information to the browser about what version of HTML is-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head> <!--All the head elements comes between <head> </head> like <title>, <base>, <link>, <meta>, <script>, and <style>.-->
+<meta charset="UTF-8" />
+<title>Markerboard for iPhone and iPod touch</title> <!--Check the title of the browser to see this text-->
+<link rel="stylesheet" type="text/css" href="style/mystyle.css" /> <!--The <link> tag is most used to link to style sheets-->
+<link rel="icon" href="images/png/favicon.ico" />
+<style type="text/css"></style>
+<!--Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata-->
+<meta name="description" content="Sketch Your Ideas Quickly with 'Markerboard' | Sanjeev Beekeeper" />
+<meta name="keywords" content="Swipe to change color, Slide down to change marker size, Sketch it Quickly, Quick Sketch, Drawings, Notes, " />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
+</script>
+
+<script type="text/javascript" src="script/stepcarousel.js">
+
+/***********************************************
+* Step Carousel Viewer script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+
+<style type="text/css">
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+overflow: scroll; /*leave this value alone*/
+width: 700px; /*Width of Carousel Viewer itself*/
+height: 360px; /*Height should enough to fit largest content's height*/
+margin:10px auto 0;
+outline:0px solid white;}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0px;}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 0px; /*margin around each panel*/
+width: 700px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+#mygallery-paginate { margin:20px auto 10px auto; }
+#mygallery-paginate img { margin: 5px; }
+
+</style>
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+	galleryid: 'mygallery', //id of carousel DIV
+	beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+	panelclass: 'panel', //class of panel DIVs each holding content
+	autostep: {enable:true, moveby:1, pause:4000},
+	panelbehavior: {speed:300, wraparound:true, wrapbehavior:'slide', persist:true},
+	defaultbuttons: {enable: false },
+	statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+	contenttype: ['inline'] //content setting ['inline'] or ['ajax', 'path_to_external_file']
+})
+
+</script>
+
+<!--jQuery Script Do Not Cross This Line-->
+
+
+</head>
+
+
+
+
+<body>
+
+	<!--Header-->
+	
+		<div id="header"> <!--Header div-->
+
+			<div id="wrapper_menu"> <!--Wrapper menu div-->
+				<div>
+					<img class="logo_img" src="images/png/homelogo.png" alt="logo.png" width="24" height="34" />
+					<span class="name_menu">Sanjeev Beekeeper</span>
+				</div>
+			</div>	<!--Wrapper menu div-->
+
+		</div> <!--Header div Closing-->
+
+	<!--Navigation Menu-->
+
+	<!--Navigation-->
+
+		<div id="nav_container"> <!--Navigation Menu-->
+
+			<div class="menu">
+				<ul>
+					<li><a class="home" href="home.html">HOME</a></li>
+					<li><a class="markerboard" href="markerboard.html"><span class="selected">MARKERBOARD</span></a></li>
+					<li><a class="support" href="support.html">SUPPORT</a></li>
+					<li><a class="about" href="about.html">ABOUT</a></li>
+				</ul>
+			</div>
+
+		</div> <!--Navigation Menu Closing-->
+
+	<!--Wrapper-->
+
+	<!--Wrapper-->
+
+		<div id="wrapper_container"> <!--Wrapper Container-->
+
+			<div id="wrapper_head">
+			</div> <!--background head-->
+
+
+		<div id="markerboard_wrapper_middle"> <!--Wrapper Middle-->
+	
+	<!--Markerboard Logo, Appstore, iPhone and iPod touch-->
+				<div id="markerboard_app_cont">
+					<img class="mkblogo" src="images/png/markerboardicon.png" alt="markerboard icon.png" width="149" height="154" />
+					<img class="appsttop" src="images/png/appstore.png" alt="appstore logo.png" width="174" height="63" />
+				</div>
+				<div id="markerboard_text_cont">
+					<img class="mkbtext" src="images/png/markerboard_text.png" alt="markerboard text.png" width="450" height="45" />
+				</div>
+				<div id="sketchideas_text_cont">
+					<span>sketch your ideas quickly</span>
+				</div>
+				<div id="devicesios_text_cont">
+					<span class="iphone">iPhone 3GS, iPhone 4, iPhone 3S</span><br />
+					<span class="ipodtouch">iPod touch (<i>3rd gen</i>), iPod touch (<i>4th gen</i>)</span><br />
+					<span class="ios">IOS 3.5 or later</span>				
+				</div>
+
+	<!--Separator-1-->
+
+				<img class="separator1" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+
+	<!--jQuery Slideshow-->
+
+				<div class="slideshow">
+					<div id="mygallery" class="stepcarousel">
+						<div class="belt">
+							<div class="panel">
+								<img src="images/png/slideshow01.png" alt="Markerboard1.jpg" />
+							</div>
+							<div class="panel">
+								<img src="images/png/slideshow02.png" alt="Markerboard2.jpg" />
+							</div>
+							<div class="panel">
+								<img src="images/png/slideshow03.png" alt="Markerboard3.jpg" />
+							</div>
+							<div class="panel">
+								<img src="images/png/slideshow04.png" alt="Markerboard4.jpg" />
+							</div>
+							<div class="panel">
+								<img src="images/png/slideshow05.png" alt="Markerboard5.jpg" />
+							</div>
+							<div class="panel">
+								<img src="images/png/slideshow06.png" alt="Markerboard6.jpg" />
+							</div>
+						</div>
+					</div>
+					<p id="mygallery-paginate" style="width:450px; text-align:center">
+						<img src="images/png/dotactive.png" data-over="images/png/dotactive.png" data-select="images/png/dotinactive.png" data-moveby="1" />
+					</p>
+					<div class="c"></div>
+					<div class="divisor_new"></div>
+				</div>
+				
+	<!--Separator-2-->
+
+				<img class="separator2" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+
+	<!--Marker image and its shadow background-->
+
+				<div id="markerpenbg">
+					<img class="markerpen" src="images/png/markerpen.png" alt="markerpen.png" width="503" height="124" />
+				</div>
+
+	<!--Markerboard Desctiption text-->
+
+				<div id="marker_desc">
+					<span>Marker lets you write anything and everything on the markerboard. 
+					You can access brush thickness directly on the marker pen itself without 
+					going to the brush panel. Marker comes with two colors, black and red.</span>
+				</div>
+
+	<!--Roll Pen Tap Pen-->
+
+				<div id="rolltap_img_cont">
+					<img class="rolltap_image" src="images/png/rollpen.png" alt="roll pen tap pen.jpg" width="360" height="240" />
+					
+					<div id="rolltap_text_cont">
+						<h3 class="rollpen">Roll Pen</h3>
+						<span class="rollpen_desc" >To change the color of your marker, just spin the marker towards left.</span>
+						<h3 class="tappen">Tap Pen</h3>
+						<span class="tappen_desc">Another way to change the color of your marker is by tapping on the pen’s body.<br />
+						<br />
+						Switch either one of the options from the option panel.</span>
+					</div>
+				</div>
+				
+	<!--Separator-3-->
+
+				<img class="separator3" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+
+	<!--Adjusting the Marker size-->
+	
+				<div id="markersize_img_cont">
+					<img class="markersize_img" src="images/png/markersize.png" alt="markersize.jpg" width="303" height="280" />
+					
+					<div id="markersize_text_cont">
+						<h3 class="markersize">Adjusting the Marker Size</h3>
+						<span class="markersize_desc" >The fastest way to adjust the marker size is to tap on the head and slide down finger.<br />
+						<br />
+						Or just tap on the head will bring the brush panel, where you can adjust the brush through slider  and even access the history brush.</span>
+					</div>
+				</div>
+				
+	<!--Separator-4-->
+
+				<img class="separator4" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+
+	<!--Offset Cursor-->
+	
+				<div id="offsetcursor_img_cont">
+					<img class="offsetcursor_img" src="images/png/offsetcursor.png" alt="markersize.jpg" width="204" height="86" />
+					
+					<div id="offsetcursor_text_cont">
+						<h3 class="offsetcursor">Offset Cursor</h3>
+						<span class="offsetcursor_desc">Offset cursor will lets you offset the drawing point away from your finger tip. 
+						This option will help you to see the starting position of the brush.</span>
+					</div>
+				</div>
+				
+	<!--Separator-5-->
+
+				<img class="separator5" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+				
+	<!--History Brushes-->
+
+				<div id="historybrush_img_cont">
+					<img class="historybrush_img" src="images/png/history.png" alt="history brush.jpg" width="200" height="195" />
+
+					<div id="historybrush_text_cont">
+						<h3 class="historybrush">History Brushes</h3>
+						<span class="historybrush_desc" >History will display 3 recently used brushes. It is available in the brush panel.<br />
+						</span>
+					</div>
+
+				</div>
+					
+	<!--Separator-6-->
+
+				<img class="separator6" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+
+	<!--Eraser image and its shadow background-->
+
+				<div id="eraserbg">
+					<img class="eraser" src="images/png/eraser.png" alt="eraser.png" width="527" height="149" />
+				</div>
+				
+	<!--Eraser Desctiption text-->
+
+				<div id="eraser_desc">
+					<span>Eraser will erase what you have written or drawn on the markerboard, 
+					raser brush settings and the size is available only if the eraser is selected. 
+					Like marker eraser has its own brush panel and history brush where you can select from.</span>
+				</div>
+				
+	<!--Adjust the Eraser Thickness-->
+
+				<div id="eraserthick_img_cont">
+					<img class="eraserthick_image" src="images/png/erasersize.png" alt="eraser Size.jpg" width="354" height="286" />
+					
+					<div id="eraserthick_text_cont">
+						<h3 class="eraserthick">Adjust the Eraser Thickness</h3>
+						<span class="eraserthick_desc">Adjusting the eraser size is just like the same way as the marker.<br />
+						Touch the top and slide your finger down will reduce the size and sliding it up will increase the size.<br />
+						<br />
+						you can also do manually by going to the Eraser Panel and moving the slider.</span>
+					</div>
+				</div>
+				
+	<!--Separator-7-->
+
+				<img class="separator7" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+				
+	<!--Toggle Switch-->
+
+				<div id="toggleswitch_img_cont">
+					<img class="toggleswitch_img" src="images/png/toggleswitch.png" alt="toggle switch.jpg" width="206" height="86" />
+
+					<div id="toggleswitch_text_cont">
+						<h3 class="toggleswitch">Toggle Switch for Marker and Eraser</h3>
+						<span class="toggleswitch_desc" >To switch between Marker and Eraser, 
+						use the toggle switch at the bottom left of the markerboard.<br />
+						The transparency settings is controlled in the options panel.</span>
+					</div>
+				</div>
+
+	<!--Separator-8-->
+
+				<img class="separator8" src="images/png/separator.png" alt="separator.png" width="733" height="2" />
+				
+	<!--Get your Free copy today!!-->
+
+				<p class="getyourcopy">Get Your Free Copy Today!!</p>
+				<a class="appstore_bottom" href="http://www.apple.com" target="_blank"><img src="images/png/appstore.png" alt="appstore badge.jpg" width="176" height="63" /></a>
+				
+		</div> <!--Wrapper Middle Closing-->
+			
+			<div id="wrapper_bottom">
+			</div> <!--background tail image-->			
+			
+		</div> <!--Wrapper Closing-->
+
+	<!--Navigation Menu - Bottom-->
+	
+	<!--Navigation at the bottom-->
+
+		<div id="nav_cont_bottom"> <!--Navigation Menu-->
+
+			<div class="menu_bottom">
+				<ul>
+					<li><a class="home" href="home.html">HOME</a></li>
+					<li><a class="markerboard" href="markerboard.html">MARKERBOARD</a></li>
+					<li><a class="support" href="support.html">SUPPORT</a></li>
+					<li><a class="about" href="about.html">ABOUT</a></li>
+				</ul>
+			
+			</div>
+					<a href="http://www.facebook.com/markerboardapp" target="_blank"><img border="0" class="facebook" src="images/png/facebook.png" alt="facebook.jpg" width="42" height="42" /></a>
+					<a href="http://www.twitter.com/markerboardapp" target="_blank"><img border="0" class="twitter" src="images/png/twitter.png" alt="twitter.jpg" width="42" height="42" /></a>
+
+		</div> <!--Navigation Menu Closing-->	
+	
+	<!--Footer-->	
+
+		<div id="home_footer_cont">	<!--Footer body div-->
+
+			<p class="copyright">&copy; 2012 SANJEEV BEEKEEPER</p>
+			<p class="design">DESIGNED BY BEEKEEPER</p>
+
+		</div> <!--Footer body Closing-->
+
+</body>
+
+
+
+
+
+</html>
